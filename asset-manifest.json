@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/QuoteSpark/static/css/main.20b212ef.css",
+    "main.js": "/QuoteSpark/static/js/main.071fa865.js",
+    "static/js/453.8c6e8392.chunk.js": "/QuoteSpark/static/js/453.8c6e8392.chunk.js",
+    "index.html": "/QuoteSpark/index.html",
+    "main.20b212ef.css.map": "/QuoteSpark/static/css/main.20b212ef.css.map",
+    "main.071fa865.js.map": "/QuoteSpark/static/js/main.071fa865.js.map",
+    "453.8c6e8392.chunk.js.map": "/QuoteSpark/static/js/453.8c6e8392.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20b212ef.css",
+    "static/js/main.071fa865.js"
+  ]
+}
