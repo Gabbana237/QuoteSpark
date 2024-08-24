@@ -1,38 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* App.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Background color */
+}
+
+.quote-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quote-box {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quote-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.quote-category {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls select, .controls input[type="range"], .controls input[type="color"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.new-quote-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-quote-btn:hover {
+  background-color: #2980b9;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions button {
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions button:hover {
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle {
+  margin-top: 20px;
+  background-color: #f39c12;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #e67e22;
+}
+
+.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+@media (max-width: 600px) {
+  .quote-container {
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 35px;
+    height: 35px;
   }
 }
